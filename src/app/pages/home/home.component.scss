@@ -1,0 +1,70 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Barlow:wght@400;500;700&display=swap');
+  $Very-Dark-Gray: hsl(0, 0%, 17%);
+  $Dark-Gray: hsl(0, 0%, 59%);
+  $my-Font-size : 18px;
+  *{
+    
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 70%;
+    height: 50px;
+    border-radius: 20px;
+    
+}
+
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+  .content-one{
+    background-image: url(../../../assets/images/pattern-bg-desktop.png);
+    width: 100%;
+    height: 35vh;
+    background-size: cover;
+    padding: 1rem;
+
+    h1{
+        color: #fff;
+        font-weight: 500;
+    }
+    .move{
+        position: relative;
+        z-index: 3;
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 15px;
+        p {
+            color: $Dark-Gray;
+            font-size: 12px;
+        }
+        h1{
+            color: $Very-Dark-Gray;
+            font-size: $my-Font-size;
+            font-weight: 700;
+        }
+         >:not(:last-child){
+            border-right: 1px solid $Dark-Gray;
+        }
+    }
+   
+    .btn{
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 0 20px;
+    }
+  }
+  .content-two{
+    background-color: black;
+    width: 100%;
+    height: 65vh;
+  }
